@@ -15,7 +15,7 @@ const NavBar = () => {
     document.documentElement.classList.toggle("dark");
   };
   return (
-    <nav className="h-16 flex items-center justify-between px-8 border-b ">
+    <nav className="h-16 flex items-center justify-between px-16 border-b ">
       <Image
         src="/pulseCamair-logo-1.png"
         alt="pulse camair logo"
