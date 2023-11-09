@@ -1,7 +1,6 @@
 import Avatar from "@/components/Avatar";
 import { SideNav } from "../../components/navBar/SideNav";
 import TopNav from "@/components/TopNav";
-import MobileNav from "@/components/MobileNav";
 
 export default function RootLayout({
   children,
@@ -11,12 +10,10 @@ export default function RootLayout({
   return (
     <main className="flex w-full ">
       <SideNav />
-      <div className="flex flex-col h-[100vh] absolute">
+      <div className="flex flex-col h-[100vh]">
         <TopNav />
         {children}
-        <div className="relative bg-red-600 w-full bottom-100">
-        <MobileNav />
-        </div>
+        
       </div>
      
     </main>
