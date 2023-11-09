@@ -15,41 +15,41 @@ const NavBar = () => {
     document.documentElement.classList.toggle("dark");
   };
   return (
-    <nav className="h-16 flex items-center justify-between px-16 border-b border-slate-300 ">
+    <nav className="h-16 flex items-center justify-between  border-b border-slate-300 ">
       <div className="logocontainer flex items-center">
-        <Image
+        {/* <Image
           src="/newslogochanged.png"
           alt="pulse camair logo"
           width={20}
           height={20}
-        />
+        /> */}
         <h3 className="font-bold">
-          Pulse<span className="text-cyan-600">Camair</span>
+          Pulse<span className="text-themecolor">Camair</span>
         </h3>
       </div>
 
       <div className="subContainer flex justify-between gap-10">
         <div className="links flex justify-around gap-2 font-normal">
-          <Link href="/" className="hover:text-cyan-600">
+          <Link href="/" className="hover:text-themecolor">
             Events
           </Link>
-          <Link href="/" className="hover:text-cyan-600">
+          <Link href="/" className="hover:text-themecolor">
             Fintech
           </Link>
-          <Link href="/" className="hover:text-cyan-600">
+          <Link href="/" className="hover:text-themecolor">
             Startups
           </Link>
-          <Link href="/" className="hover:text-cyan-600">
+          <Link href="/" className="hover:text-themecolor">
             Govenment
           </Link>
         </div>
 
         <div className="actionB flex items-center gap-2" text-cyan-600>
-          <button className="text-2xl text-cyan-600">
+          <button className="text-2xl text-themecolor">
             <LuSearch />
           </button>
 
-          <button className="text-2xl text-cyan-600" onClick={toggleTheme}>
+          <button className="text-2xl text-themecolor" onClick={toggleTheme}>
             {toggleOn ? <BsToggleOn /> : <BsToggleOff />}
           </button>
         </div>
