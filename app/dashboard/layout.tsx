@@ -1,4 +1,4 @@
-import { SideNav } from "../components/navBar/SideNav";
+import { SideNav } from "../../components/navBar/SideNav";
 
 export default function RootLayout({
   children,
