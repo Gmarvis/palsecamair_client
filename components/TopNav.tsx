@@ -6,7 +6,7 @@ const TopNav = () => {
     <div className="flex items-center justify-between w-full p-2">
       TopNav
       <Avatar
-        size={5}
+        size={4}
         profilePicture="https://images.pexels.com/photos/1674752/pexels-photo-1674752.jpeg?auto=compress&cs=tinysrgb&w=1600"
       />
     </div>
