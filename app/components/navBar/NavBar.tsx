@@ -15,16 +15,21 @@ const NavBar = () => {
     document.documentElement.classList.toggle("dark");
   };
   return (
-    <nav className="h-16 flex items-center justify-between px-16 border-b ">
-      <Image
-        src="/pulseCamair-logo-1.png"
-        alt="pulse camair logo"
-        width={150}
-        height={50}
-      />
+    <nav className="h-16 flex items-center justify-between px-16 border-b border-slate-300 ">
+      <div className="logocontainer flex items-center">
+        <Image
+          src="/newslogochanged.png"
+          alt="pulse camair logo"
+          width={20}
+          height={20}
+        />
+        <h3 className="font-bold">
+          Pulse<span className="text-cyan-600">Camair</span>
+        </h3>
+      </div>
 
       <div className="subContainer flex justify-between gap-10">
-        <div className="links flex justify-around gap-2 ">
+        <div className="links flex justify-around gap-2 font-normal">
           <Link href="/" className="hover:text-cyan-600">
             Events
           </Link>
@@ -35,7 +40,7 @@ const NavBar = () => {
             Startups
           </Link>
           <Link href="/" className="hover:text-cyan-600">
-            Events
+            Govenment
           </Link>
         </div>
 
