@@ -1,6 +1,9 @@
+"use client"
 import Link from "next/link";
 import React from "react";
 import { MdDashboard } from "react-icons/md";
+import {PiArticleMediumFill} from "react-icons/pi"
+import {SlEvent} from "react-icons/sl"
 
 const links = [
   {
@@ -11,12 +14,12 @@ const links = [
   {
     pathName: "Articles",
     url: "/",
-    icon: <MdDashboard />,
+    icon: <PiArticleMediumFill />,
   },
   {
     pathName: "Events",
     url: "/",
-    icon: <MdDashboard />,
+    icon: <SlEvent />,
   },
   {
     pathName: "Dashboard",
@@ -36,16 +39,27 @@ const links = [
 ];
 
 export const SideNav = () => {
+
+
   return (
-    <div>
-      <div className="flex flex-col bg-red-600 w-[10vw] h-[100vh]">
-        {links.map((link, index) => (
-          <Link href={link.url} key={index}>
-            {link.icon}
-            {link.pathName}
-          </Link>
-        ))}
+    <div className="absolute">
+      <div className="flex flex-col bg-white w-[10vw] h-[100vh] gap-20 absolute">
+        <h1>Hello Sam</h1>
+        <div className="flex flex-col gap-5">
+          {links.map((link, index) => (
+            <Link
+              href={link.url}
+              key={index}
+              className="flex items-center gap-2 hover:bg-green-600 p-3"
+            >
+              <p className="text-3xl">{link.icon}</p>
+              {link.pathName}
+            </Link>
+          ))}
+        </div>
+      
       </div>
+    
     </div>
   );
 };
