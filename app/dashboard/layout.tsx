@@ -8,14 +8,18 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <main className="flex w-full ">
+    <main className="flex w-full mobile:max-sm:flex-col ">
+      <div className=" mobile:max-sm:hidden">
       <SideNav />
+      </div>
       <div className="flex flex-col h-[100vh]">
         <TopNav />
         {children}
         
       </div>
-     
+      <div className=" mobile:max-sm:visible fixed bg-red-600 bottom-0 w-full">
+      <SideNav />
+      </div>
     </main>
   );
 }

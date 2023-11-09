@@ -35,6 +35,7 @@ export const links = [
 
 export const SideNav = () => {
   return (
+    <>
       <div className="flex flex-col h-[100vh] items-center mobile:max-sm:hidden bg-slate-200 w-[4vw] gap-20 relative pt-5">
       
         <div className="flex flex-col mt-20 gap-5">
@@ -53,7 +54,10 @@ export const SideNav = () => {
         </div>
       
       </div>
-
+<div className=" sm:hidden mobile:max-sm:visible">
+  <h3>Mobile nav</h3>
+</div>
+      </>
 
   );
 };
