@@ -10,7 +10,7 @@ import { CgProfile } from "react-icons/cg";
 import Tippy from "@tippy.js/react";
 import "tippy.js/dist/tippy.css";
 
-const links = [
+export const links = [
   {
     pathName: "Dashboard",
     url: "/",
@@ -35,7 +35,7 @@ const links = [
 
 export const SideNav = () => {
   return (
-      <div className="flex flex-col h-[100vh] items-center bg-slate-200 w-[4vw] gap-20 relative pt-5">
+      <div className="flex flex-col h-[100vh] items-center mobile:max-sm:hidden bg-slate-200 w-[4vw] gap-20 relative pt-5">
       
         <div className="flex flex-col mt-20 gap-5">
           {links.map((link, index) => (
@@ -53,5 +53,7 @@ export const SideNav = () => {
         </div>
       
       </div>
+
+
   );
 };

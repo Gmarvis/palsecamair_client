@@ -16,6 +16,9 @@ const config: Config = {
       colors: {
         themecolor: "#0891b2",
         dark: "#2d2f31"
+      },
+      screens: {
+        mobile: "0px"
       }
     },
   },
