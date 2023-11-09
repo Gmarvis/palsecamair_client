@@ -3,7 +3,7 @@ import Avatar from "./Avatar";
 
 const TopNav = () => {
   return (
-    <div className="flex items-center justify-between w-full p-2">
+    <div className="flex items-center self-center content-center justify-between w-[96vw] p-2">
       TopNav
       <Avatar
         size={4}

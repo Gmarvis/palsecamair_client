@@ -8,11 +8,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <main className="flex  flex-col">
-        <TopNav />
-      <div className="flex">
+    <main className="flex w-full ">
       <SideNav />
-      {children}
+      <div className="flex flex-col h-[100vh]">
+        <TopNav />
+        {children}
       </div>
     </main>
   );

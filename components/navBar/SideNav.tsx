@@ -35,9 +35,9 @@ const links = [
 
 export const SideNav = () => {
   return (
-      <div className="flex flex-col h-[100vh] bg-slate-200 w-fit gap-20 pt-5">
+      <div className="flex flex-col h-[100vh] items-center bg-slate-200 w-[4vw] gap-20 relative pt-5">
       
-        <div className="flex flex-col gap-5">
+        <div className="flex flex-col mt-20 gap-5">
           {links.map((link, index) => (
             <Tippy content={link.pathName} key={index} placement="right">
               <Link
