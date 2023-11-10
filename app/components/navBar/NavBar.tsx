@@ -12,7 +12,6 @@ const NavBar = () => {
   const [toggleOn, setToggleOn] = useState(false);
   const toggleTheme = () => {
     setToggleOn(!toggleOn);
-    document.documentElement.classList.toggle("dark");
   };
   return (
     <nav className="h-16 flex items-center justify-between px-16 border-b border-slate-300 ">
