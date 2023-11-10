@@ -17,7 +17,7 @@ export default function RootLayout({
         {children}
         
       </div>
-      <div className=" mobile:max-sm:visible sm:hidden fixed bg-red-600  bottom-0 w-full">
+      <div className=" mobile:max-sm:visible sm:hidden fixed bg-slate-200 bottom-0 w-full">
       <SideNav />
       </div>
     </main>

@@ -3,8 +3,8 @@ import Avatar from "./Avatar";
 
 const TopNav = () => {
   return (
-    <div className="flex items-center self-center content-center justify-between w-[96vw] p-2">
-      TopNav
+    <div className="flex items-center self-center content-center justify-between mobile:max-sm:w-full w-[96vw] p-2">
+      Creators section
       <Avatar
         size={4}
         profilePicture="https://images.pexels.com/photos/1674752/pexels-photo-1674752.jpeg?auto=compress&cs=tinysrgb&w=1600"
