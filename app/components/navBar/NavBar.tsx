@@ -1,5 +1,7 @@
 "use client";
 
+import { useTheme } from "next-themes";
+
 // react icon imports
 import { LuSearch } from "react-icons/lu";
 import { BsToggleOn } from "react-icons/bs";
@@ -8,10 +10,15 @@ import { BsToggleOff } from "react-icons/bs";
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
+
 const NavBar = () => {
+  const { theme, setTheme } = useTheme();
+
   const [toggleOn, setToggleOn] = useState(false);
   const toggleTheme = () => {
     setToggleOn(!toggleOn);
+    setTheme("dark");
+    // document.documentElement.classList.toggle("dark");
   };
   return (
     <nav className="h-16 flex items-center justify-between  border-b border-slate-300 ">
