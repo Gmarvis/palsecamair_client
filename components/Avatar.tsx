@@ -5,13 +5,19 @@ import React from "react";
 type AvatarProps = {
   profilePicture: string;
   size: number;
+  onClick?: () => void;
 };
 
-const Avatar = ({ profilePicture, size }: AvatarProps) => {
+const Avatar = ({ profilePicture, size, onClick }: AvatarProps) => {
   return (
     <button
-      style={{ backgroundImage: `url(${profilePicture})`, width: `${size*10}px`, height: `${size*10}px` }}
+      style={{
+        backgroundImage: `url(${profilePicture})`,
+        width: `${size * 10}px`,
+        height: `${size * 10}px`,
+      }}
       className={`bg-cover bg-center object-fill rounded-[50%] h-${size} w-${size}`}
+      onClick={onClick}
     >
       {/* <Image
         src={dp}
@@ -20,7 +26,6 @@ const Avatar = ({ profilePicture, size }: AvatarProps) => {
         alt={""}
         className="rounded-full object-"
       /> */}
-      
     </button>
   );
 };
