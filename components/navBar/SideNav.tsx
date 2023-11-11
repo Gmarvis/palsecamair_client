@@ -53,7 +53,6 @@ export const SideNav = () => {
                 } flex items-center font-light hover:text-white hover:bg-themecolor gap-2 p-4`}
               >
                 <p className="text-3xl">{link.icon}</p>
-                {/* <p>{link.pathName}</p> */}
               </Link>
             </Tippy>
           ))}

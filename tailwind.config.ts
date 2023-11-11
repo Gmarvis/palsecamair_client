@@ -19,6 +19,7 @@ const config: Config = {
         themecolor: "#ff385c",
 
         dark: "#2d2f31",
+        darkmode: "#17080C",
       },
       screens: {
         mobile: "0px",
